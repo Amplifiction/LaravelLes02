@@ -15,7 +15,7 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])
+Route::get('/', [HomeController::class, 'index']) //'index' verwijst naar de public function onder de HomeController
     ->name('home');
 
 Route::get('/articles', [ArticleController::class, 'index']) // '/articles' bouwt ENKEL de URL op.

@@ -11,7 +11,8 @@ class ArticleController extends Controller
 
 {
     public function index(){
-        return view('articles/articleIndex'); // Hier wordt het concrete bestandspad op de server (ergo file tree in VS Code) bepaald.
+        return view('articles/articleIndex');
+        // Hier wordt het concrete bestandspad op de server (ergo file tree in VS Code) bepaald (extensies niet nodig).
     }
 
     public function show($id) {
